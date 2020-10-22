@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skrá líðan</title>
+</head>
+<body>
+    <main>
+        <form id="logForm">
+            <!-- The dropdown -->
+            <select name="velja-lidan" id="velja-lidan" required>
+                <option value="" disabled selected>Velja líðan</option>
+                <option value="flensa">Flensa</option>
+                <option value="bakverkur">Bakverkur</option>
+                <option value="halsbolga">Hálsbólga</option>
+            </select>
+            <!-- Button to open add modal -->
+            <button type="button" form="logForm" value="openAddModal" id="openAddModuleBtn">Bæta við líðan</button>
+            <!-- Date input -->
+            <input type="date" id="log-date" name="log-date" required><br>
+            <!-- Multi line textarea -->
+            <label for="annad">Lýstu líðan þinni nánar:</label><br>
+            <textarea name="annad" id="annad" cols="30" rows="10" value="" required></textarea><br>
+            <!-- Submit button -->
+            <button type="submit" form="logForm" id="submitBtn" value="stadfesta">Staðfesta</button>
+        </form>
+        <!-- The add modal -->
+        <div id="myAddModal" class="add-modal">
+            <div class="add-modal-content">
+                <!-- Close (x) for modal -->
+                <span class="close-modal">&times;</span>
+                <form id="addForm">
+                    <!-- Text input field -->
+                    <label for="addInput">Bæta við líðan</label><br>
+                    <input type="text" id="addInput" name="addInput" placeholder="..." required><br>
+                    <!-- Button to submit new option to dropdown -->
+                    <button type="button" form="addForm" value="beata-vid" id="addToDropDwnBtn">Bæta við</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
