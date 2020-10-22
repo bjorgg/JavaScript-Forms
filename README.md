@@ -18,5 +18,6 @@ Every field displays an custom error messegaes if not filled out or chosen.
 If everything is valid while pressin the "Staðfesta" button it will alert
 succsess and the form will refresh.
 
-You can find comments in the code to explain the it.
-Public url: <>
+You can find comments in the code for explaination.
+
+Public url: <https://bjorgg.github.io/JavaScript-Forms/>
